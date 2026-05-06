@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+}
+
+/* GLASS */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 30px 8%;
+    padding: 40px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.homeSection {
+    text-align: center;
+}
+
+.profilePic {
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+}
+
+/* BUTTON */
+.button {
+    background: rgba(56, 189, 248, 0.2);
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* PROJECTS */
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+/* SKILLS */
+.skill {
+    margin: 20px 0;
+}
+
+.bar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.progress {
+    height: 10px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* FORM */
+.messageInput {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+    .projects-container {
+        flex-direction: column;
+    }
+}
